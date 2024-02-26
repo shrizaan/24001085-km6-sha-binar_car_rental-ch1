@@ -1,0 +1,148 @@
+/* CSS RESET START */
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* CSS RESET END */
+
+/* DESIGN SYSTEM START */
+/* COLOR START */
+.dark-blue-5 {
+  color: #091b6f;
+}
+
+.dark-blue-4 {
+  color: #0d28a6;
+}
+.dark-blue-3 {
+  color: #5e70c4;
+}
+
+.dark-blue-2 {
+  color: #aeb7e1;
+}
+
+.dark-blue-1 {
+  color: #cfd4ed;
+}
+
+.lime-green-5 {
+  color: #3d7b3f;
+}
+
+.lime-green-4 {
+  color: #5cb85f;
+}
+
+.lime-green-3 {
+  color: #92d094;
+}
+
+.lime-green-2 {
+  color: #c9e7ca;
+}
+
+.lime-green-1 {
+  color: #def1df;
+}
+
+.alert-red {
+  color: #fa2c5a;
+}
+
+.alert-yellow {
+  color: #f9cc00;
+}
+
+.alert-green {
+  color: #73ca5c;
+}
+
+.neutral-5 {
+  color: #151515;
+}
+.neutral-4 {
+  color: #3c3c3c;
+}
+.neutral-3 {
+  color: #8a8a8a;
+}
+.neutral-2 {
+  color: #d0d0d0;
+}
+.neutral-1 {
+  color: #ffffff;
+}
+/* COLOR END */
+
+/* TYPOGRAPHY START */
+.text-body-10 {
+  font-size: 1rem;
+}
+
+.text-body-12 {
+  font-size: 1.2rem;
+}
+
+.text-body-14 {
+  font-size: 1.4rem;
+}
+
+.text-title-16 {
+  font-size: 1.6rem;
+}
+
+.text-title-18 {
+  font-size: 1.8rem;
+}
+
+.text-heading-20 {
+  font-size: 2rem;
+}
+
+.text-heading-24 {
+  font-size: 2.4rem;
+}
+
+/* TYPOGRAPHY END */
+
+/* SHADOW START */
+.shadow-low {
+  box-shadow: 0px 0px 4px 0px #00000026;
+}
+
+.shadow-high {
+  box-shadow: 0px 0px 10px 0px #00000026;
+}
+/* SHADOW END */
+/* DESIGN SYSTEM END */
+#main,
+#services,
+#why-us,
+#testimonial,
+#getting-started,
+#faq,
+footer {
+  margin-bottom: 7rem !important;
+}
+
+.offcanvas.offcanvas-end.offcanvas-width {
+  width: 250px;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+}
+
+.testi-card {
+  background-color: #cfd4ed;
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+}
