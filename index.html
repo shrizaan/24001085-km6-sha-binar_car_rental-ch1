@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container p-3">
       <!-- Navbar Start -->
       <nav class="navbar navbar-expand-lg bg-body-white mb-5 pt-4">
         <a class="navbar-brand fw-bold text-success text-title-16" href="#"
@@ -56,10 +56,10 @@
                 <a class="nav-link" href="#why-us">Why Us</a>
               </li>
               <li class="nav-item fw-bold">
-                <a class="nav-link" href="#">Testimonial</a>
+                <a class="nav-link" href="#testimonial">Testimonial</a>
               </li>
               <li class="nav-item fw-bold">
-                <a class="nav-link" href="#">FAQ</a>
+                <a class="nav-link" href="#faq">FAQ</a>
               </li>
               <button type="button" class="btn btn-success">Register</button>
             </ul>
@@ -77,9 +77,7 @@
             terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu
             untuk sewa mobil selama 24 jam.
           </p>
-          <button type="button" class="btn btn-success">
-            Mulai Sewa Mobil
-          </button>
+          <button type="button" class="btn btn-custom">Mulai Sewa Mobil</button>
         </div>
         <div class="col-lg-6">
           <img src="./public/img_car.png" alt="Car Image" class="img-fluid" />
@@ -88,7 +86,7 @@
       <!-- Main Section End -->
 
       <!-- Our Service Section Start -->
-      <div id="services">
+      <div id="services" class="services">
         <h2 class="text-center fs-2 fw-bold mb-5">Our Services</h2>
         <div class="row">
           <div class="col-lg-6 mb-4">
@@ -156,7 +154,7 @@
       <!-- Our Service Section End -->
 
       <!-- Why Us Section Start -->
-      <div id="why-us" class="row">
+      <div id="why-us" class="row why-us">
         <h2 class="fw-bold fs-2 text-center">Why Us?</h2>
         <p class="text-center">Mengapa harus pilih Binar Car Rental?</p>
 
@@ -230,24 +228,22 @@
       <!-- Why Us Section Start -->
 
       <!-- Testimonial Section Start -->
-      <div id="testimonial">
+      <div id="testimonial" class="testimonial">
         <h2 class="text-center fw-bold fs-2 mb-4">Testimonial</h2>
         <p class="text-center">
           Jangan hanya percaya pada kata-kata kami, dengarkan apa yang pelanggan
           kami katakan:
         </p>
-        <div id="carousel-testimonial" class="carousel slide">
+        <div id="carousel-testimonial" class="carousel slide mb-3">
           <div class="carousel-inner">
-            <div
-              class="carousel-item testi-card active mx-auto p-4 border-5 rounded-3"
-            >
-              <div class="d-flex justify-content-center gap-4">
+            <div class="carousel-item testimonial__card rounded-3 active">
+              <div class="d-flex flex-column justify-content-center gap-3">
                 <img
                   src="./public/img_testi-2.png"
                   alt="Customer Avatar"
                   class="avatar testimonial-img align-self-center"
                 />
-                <div class="testi-content">
+                <div class="testi-content d-flex flex-column gap-1">
                   <img
                     src="./public/Rate.png"
                     alt="star rate"
@@ -258,21 +254,21 @@
                     beragam pilihan mobil yang tersedia. Mobil-mobilnya bagus
                     kondisi dan terawat."
                   </p>
-                  <p class="testiomonial-profile">John Doe 32, Jambi</p>
+                  <p class="testiomonial-profile fw-medium">
+                    John Doe 32, Jambi
+                  </p>
                 </div>
               </div>
             </div>
-            <div
-              class="carousel-item testi-card mx-auto p-4 gap-4 border-5 rounded-3"
-            >
-              <div class="d-flex justify-content-center gap-4">
+            <div class="carousel-item testimonial__card rounded-3">
+              <div class="d-flex flex-column justify-content-center gap-3">
                 <img
                   src="./public/img_testi-1.jpeg"
                   alt="Customer Avatar"
                   class="avatar testimonial-img"
                   style="width: 80px; height: 80px; border-radius: 100%"
                 />
-                <div class="testi-content">
+                <div class="testi-content d-flex flex-column gap-1">
                   <img
                     src="./public/Rate.png"
                     alt="star rate"
@@ -283,20 +279,20 @@
                     beragam pilihan mobil yang tersedia. Mobil-mobilnya bagus
                     kondisi dan terawat."
                   </p>
-                  <p class="testiomonial-profile">Jane Doe 32, Palembang</p>
+                  <p class="testiomonial-profile fw-medium">
+                    Jane Doe 32, Palembang
+                  </p>
                 </div>
               </div>
             </div>
-            <div
-              class="carousel-item testi-card mx-auto p-4 gap-4 border-5 rounded-3"
-            >
-              <div class="d-flex justify-content-centery gap-4">
+            <div class="carousel-item testimonial__card rounded-3">
+              <div class="d-flex flex-column justify-content-center gap-3">
                 <img
                   src="./public/img_testi-3.png"
                   alt="Customer Avatar"
                   class="avatar testimonial-img"
                 />
-                <div class="testi-content">
+                <div class="testi-content d-flex flex-column gap-1">
                   <img
                     src="./public/Rate.png"
                     alt="star rate"
@@ -307,13 +303,14 @@
                     beragam pilihan mobil yang tersedia. Mobil-mobilnya bagus
                     kondisi dan terawat."
                   </p>
-                  <p class="testiomonial-profile">Bob Roy 29, Lampung</p>
+                  <p class="testiomonial-profile fw-medium">
+                    Bob Roy 29, Lampung
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
         <div class="carouse-navigation-button d-flex justify-content-center">
           <button
             type="button"
@@ -326,7 +323,7 @@
           </button>
           <button
             class="btn"
-            type="button"
+            type="button btn-custom"
             data-bs-target="#carousel-testimonial"
             data-bs-slide="next"
           >
@@ -340,7 +337,7 @@
       <!-- Getting Started Section Start -->
       <div
         id="getting-started"
-        class="p-5 bg-primary text-white rounded mx-auto d-flex flex-column justify-content-center text-center gap-3"
+        class="getting-started p-5 bg-primary text-white rounded mx-auto d-flex flex-column justify-content-center text-center gap-3"
       >
         <h2>Sewa Mobil di (Lokasimu) Sekarang</h2>
         <p>
@@ -350,7 +347,7 @@
         </p>
         <button
           type="button"
-          class="btn btn-success w-50 justify-self-center mx-auto"
+          class="btn btn-custom justify-self-center mx-auto"
         >
           Mulai Sewa Mobil
         </button>
@@ -358,7 +355,7 @@
       <!-- Getting Started Section End -->
 
       <!-- FAQ Section Start -->
-      <div id="faq">
+      <div id="faq" class="faq">
         <div class="faq-header text-center">
           <h2>Frequently Asked Question</h2>
           <p>
@@ -366,8 +363,8 @@
           </p>
         </div>
         <div class="faq-body">
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
+          <div class="accordion gap-3 d-flex flex-column" id="accordionExample">
+            <div class="accordion-item border-1">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed"
@@ -386,19 +383,14 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It
-                  is shown by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  Untuk menyewa mobil, Anda perlu memiliki SIM aktif yang masih
+                  berlaku, kartu identitas (KTP/SIM), dan kartu kredit/debit
+                  sebagai jaminan. Selain itu, Anda juga harus berusia minimal
+                  21 tahun.
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item border-1">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed"
@@ -417,19 +409,12 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  Untuk sewa mobil lepas kunci, kami memiliki kebijakan sewa
+                  minimal 3 hari.
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item border-1">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed"
@@ -448,19 +433,14 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  Kami sarankan untuk melakukan pemesanan minimal 3-5 hari
+                  sebelumnya untuk memastikan ketersediaan mobil yang
+                  diinginkan. Namun, kami akan berusaha memenuhi permintaan
+                  pemesanan last minute sejauh memungkinkan.
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item border-1">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed"
@@ -479,19 +459,14 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  Ya, kami menyediakan layanan antar-jemput dengan biaya
+                  tambahan tergantung lokasi penjemputan dan tujuan. Silakan
+                  hubungi kami untuk informasi lebih lanjut mengenai biaya dan
+                  ketersediaan layanan ini.
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item border-1">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed"
@@ -510,15 +485,10 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  Kami memiliki asuransi yang melindungi Anda dalam kasus
+                  kecelakaan. Mohon segera hubungi layanan pelanggan kami dan
+                  laporkan insiden tersebut. Tim kami akan memberikan bantuan
+                  dan panduan lebih lanjut mengenai prosedur yang harus diikuti.
                 </div>
               </div>
             </div>
@@ -528,14 +498,14 @@
       <!-- FAQ Section End -->
 
       <!-- Footer Start -->
-      <footer class="row">
+      <footer class="row footer gap-3">
         <div class="col-lg-3">
           <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
           <p>binarcarrental@gmail.com</p>
           <p>081-233-334-808</p>
         </div>
         <div class="col-lg-3">
-          <ul>
+          <ul class="d-flex flex-column gap-3 fw-medium">
             <li>Our services</li>
             <li>Why Us</li>
             <li>Testimonial</li>
@@ -543,13 +513,40 @@
           </ul>
         </div>
         <div class="col-lg-3">
-          <p>Contact with us</p>
-          <ul>
-            <li>facebook</li>
-            <li>instagram</li>
-            <li>twitter</li>
-            <li>email</li>
-            <li>twitch</li>
+          <p>Connect with us</p>
+          <ul class="d-flex gap-3">
+            <li>
+              <img
+                src="./public/facebook.svg"
+                alt="facebook"
+                class="footer__icon"
+              />
+            </li>
+            <li>
+              <img
+                src="./public/instagram.svg"
+                alt="instagram"
+                class="footer__icon"
+                srcset=""
+              />
+            </li>
+            <li>
+              <img
+                src="./public/twitter.svg"
+                alt="twitter"
+                class="footer__icon"
+              />
+            </li>
+            <li>
+              <img src="./public/email.svg" alt="email" class="footer__icon" />
+            </li>
+            <li>
+              <img
+                src="./public/twitch.svg"
+                alt="twitch"
+                class="footer__icon"
+              />
+            </li>
           </ul>
         </div>
         <div class="col-lg-3">

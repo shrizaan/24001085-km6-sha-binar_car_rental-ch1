@@ -119,6 +119,8 @@ li {
 }
 /* SHADOW END */
 /* DESIGN SYSTEM END */
+
+/* Container Margin */
 #main,
 #services,
 #why-us,
@@ -127,6 +129,22 @@ li {
 #faq,
 footer {
   margin-bottom: 7rem !important;
+}
+
+/* Custom Button */
+.btn.btn-custom {
+  background-color: #5cb85f;
+  color: white;
+}
+
+.getting-started .btn.btn-custom {
+  width: 50%;
+}
+
+@media (min-width: 992px) {
+  .getting-started .btn.btn-custom {
+    width: 25%;
+  }
 }
 
 .offcanvas.offcanvas-end.offcanvas-width {
@@ -138,11 +156,28 @@ footer {
   height: 36px;
 }
 
-.testi-card {
+/* Testimonial Start */
+.testimonial__card {
   background-color: #cfd4ed;
+  padding: 1rem;
 }
 
 .testimonial-img {
   width: 80px;
   height: 80px;
 }
+
+.star-rate {
+  width: 120px;
+  height: 30px;
+  align-self: center;
+}
+
+/* Testimonial End */
+
+/* FOOTER START */
+.footer .footer__icon {
+  width: 24px;
+  height: 24px;
+}
+/* FOOTER END */
