@@ -139,6 +139,9 @@ footer {
 /* Testimonial End */
 
 /* GETTING STARTED START */
+.getting-started {
+  background-color: #0d28a6;
+}
 @media (min-width: 768px) {
   .getting-started {
     width: 60%;
